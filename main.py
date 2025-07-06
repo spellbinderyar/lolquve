@@ -7,8 +7,8 @@ from flask import Flask
 from keep_alive import keep_alive  # Sunucuyu canlı tutan dosya
 
 # Telegram bilgileri
-TELEGRAM_BOT_TOKEN = "8133735725:AAFuHCxcy7_Zoq0YCl562R09ImIlbCc5RDI"
-TELEGRAM_CHAT_ID = "-1002578463447"  # Grup ID (negatif sayı)
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 # %1 fark için eşik (0.01)
 THRESHOLD = 0.01
